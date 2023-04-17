@@ -410,10 +410,6 @@ nav {
   .logo {
     margin-right: 2%;
   }
-  /*
-      .nav-bar {
-          left: 8%;
-      }*/
 }
 @media (max-width: 345px) {
   .logo {

@@ -6,6 +6,18 @@
     align-items: center;
 }
 
+%hidden-el {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+%opacity-transDelay {
+    opacity: 0%;
+    transition-delay: 0s;
+}
+
+
 %gradient-rect {
     background: $theme_vert_fonce;
     background: -moz-linear-gradient(164deg, rgba(50, 102, 87, 1) 0%, rgba(0, 15, 48, 1) 100%);

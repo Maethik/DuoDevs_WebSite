@@ -1,6 +1,10 @@
 @import './_variables';
 @import './_placeholders';
 
+:root {
+    --width-10vw: 10vw;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -36,7 +40,6 @@ nav {
 
 .logo p {
     color: white;
-    /*font-size: 3rem;*/
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
@@ -120,8 +123,23 @@ nav {
     }
 }
 
+.hamburger.active {
+    background-color: $theme_vert_fonce;
+}
+
+.hamburger.active .l1 {
+    transform: translateY(15px) rotate(-225deg);
+}
+
+.hamburger.active .l2 {
+    opacity: 0;
+}
+
+.hamburger.active .l3 {
+    transform: translateY(-15px) rotate(225deg);
+}
+
 .menu-hamburger {
-    visibility: hidden;
     position: absolute;
     top: 2vh;
     left: 2vw;
@@ -183,7 +201,7 @@ nav {
 
 .intro {
     width: 100vw;
-    height: 60vh;
+    height: calc(90vh - var(--width-10vw));
     @extend %flex-center;
     flex-direction: column;
 
@@ -210,16 +228,20 @@ nav {
         text-align: center;
         color: white;
         font-family: Arial;
-        font-size: 1.5rem;
     }
+}
+
+.intro.active {
+    @extend %opacity-transDelay;
 }
 
 .nos-specialitees {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     opacity: 100%;
     transition: opacity 0.5s ease-in-out 1s;
@@ -227,9 +249,15 @@ nav {
     .rect {
         @extend %gradient-rect;
         width: 500px;
+        min-width: 500px;
         height: 700px;
         border-radius: 30px;
+        margin-top: 2%;
     }
+}
+
+.nos-specialitees.active {
+    @extend %opacity-transDelay;
 }
 
 .devProfil {
@@ -317,165 +345,52 @@ nav {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:1530px) {
-    .intro {
-        height: 90vh;
-    }
-
-    .nos-specialitees {
-        flex-direction: column;
-        height: 250vh;
-    }
-}
-
-@media (max-width: 1305px) {
-    .nav-bar {
-        width: 10vw;
-        flex-direction: column;
-    }
-
+@media (1305px >=width) {
     .hamburger {
         visibility: visible;
     }
 
-    .hamburger.active .l1 {
-        transform: translateY(15px) rotate(-225deg);
-    }
-
-    .hamburger.active .l2 {
-        opacity: 0;
-    }
-
-    .hamburger.active .l3 {
-        transform: translateY(-15px) rotate(225deg);
-    }
-
-    .hamburger.active {
-        background-color: $theme_vert_fonce;
-    }
-
     .menu {
         visibility: hidden;
-    }
-
-    .menu span {
-        margin: 10px;
-        font-size: 2rem;
-    }
-
-    .logo {
-        width: 45vw;
-    }
-
-    .icons {
-        width: 45vw;
-    }
-
-    .menu-hamburger {
-        visibility: visible;
-    }
-
-    .intro.active {
-        opacity: 0%;
-        transition-delay: 0s;
-    }
-
-    .nos-specialitees.active {
-        opacity: 0%;
-        transition-delay: 0s;
+        width: 0px;
+        height: 0px;
     }
 }
 
-@media (max-width: 975px) {
-    .icons {
-        visibility: hidden;
-        width: 0px;
-    }
-
+@media (975px >=width) {
     nav {
         flex-direction: row-reverse;
-    }
 
-    .nav-bar {
-        position: absolute;
-        height: 10vh;
-        left: 50px;
-    }
+        .icons {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
 
-    .logo {
-        width: 100%;
-        justify-content: right;
-        margin-left: 0px;
-        margin-right: 3vw;
-    }
+        .nav-bar {
+            position: absolute;
+            width: fit-content;
+            height: 10vh;
+            left: 5vw;
+        }
 
-    .logo.active {
-        transform: translateX(100%);
-    }
+        .hamburger.active {
+            transform: translateX(calc(85vw - 70px * 0.5));
+        }
 
-    .menu {
-        transform: translate(63vw, 30vh);
-        width: 60vw;
-    }
+        .logo {
+            width: 100%;
+            justify-content: right;
+            margin-left: 0px;
+            margin-right: 3vw;
+        }
 
-    .hamburger.active {
-        transform: translateX(75vw);
+        .logo.active {
+            transform: translateX(100%);
+        }
     }
 
     .menu-hamburger {
-        width: 75vw;
-    }
-
-    .intro h1 {
-        width: 100%;
-    }
-
-    .intro p {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
-}
-
-@media (max-height:500px) {
-    .nos-specialitees .rect {
-        width: 100vw;
-        height: 60vh;
-    }
-}
-
-@media (max-width:496px) {
-    .intro h1 {
-        width: 100%;
-    }
-}
-
-@media (max-width:420px) {
-    .logo {
-        margin-right: 2%;
-    }
-}
-
-@media (max-width:345px) {
-    .logo {
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
+        width: 80vw;
     }
 }

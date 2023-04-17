@@ -6,10 +6,6 @@ const logo = document.querySelector(".logo");
 const intro = document.querySelector(".intro");
 const spes = document.querySelector(".nos-specialitees");
 
-const rect1 = document.querySelector(".rect1");
-const rect2 = document.querySelector(".rect2");
-const rect3 = document.querySelector(".rect3");
-
 hamburger.addEventListener("click", translate);
 
 function translate() {

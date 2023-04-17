@@ -1,0 +1,8 @@
+/* tailles de texte responsive */
+.font-size-300 {
+    font-size: clamp(50px, 3vw, 80px);
+    margin: 0;
+}
+.font-size-200 {
+    font-size: clamp(40px, 2vw, 70px);
+}

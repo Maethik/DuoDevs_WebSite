@@ -17,10 +17,10 @@
         </div>
         <div class="nav-bar">
             <div class="menu">
-                <span class="nav-bar-link">A propos</span>
-                <span class="nav-bar-link">Portfolio</span>
-                <span class="nav-bar-link">Votre projet</span>
-                <span class="nav-bar-link">Contact</span>
+                <a class="nav-bar-link">A propos</a>
+                <a class="nav-bar-link">Portfolio</a>
+                <a class="nav-bar-link">Votre projet</a>
+                <a class="nav-bar-link">Contact</a>
             </div>
             <button class="hamburger">
                 <span class="l1"></span>
@@ -38,10 +38,10 @@
 
     <div class="menu-hamburger">
         <div class="links">
-            <span class="nav-bar-link">A propos</span>
-            <span class="nav-bar-link">Portfolio</span>
-            <span class="nav-bar-link">Votre projet</span>
-            <span class="nav-bar-link">Contact</span>
+            <a class="nav-bar-link">A propos</a>
+            <a class="nav-bar-link">Portfolio</a>
+            <a class="nav-bar-link">Votre projet</a>
+            <a class="nav-bar-link">Contact</a>
         </div>
     </div>
     <div class="container">
@@ -50,7 +50,7 @@
             <p class="font-size-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem cumque in architecto itaque
                 blanditiis fugiat non, ducimus natus illo.</p>
         </div>
-        <div class="nos-specialitees">
+        <div id="about" class="nos-specialitees">
             <div class="rect devProfil arth">
                 <div class="profilImg"><div class="img"></div></div>
                 <div class="name"><p>&#35;Arthur</p></div>
@@ -70,17 +70,154 @@
             </div>
         </div>
 
-        <div class="calculateCost">
-            <h2>Calculez le coût de votre site web</h2>
+        <div class="portfolio-container">
+            <div class="portfolio">
+                <h2 class="font-size-300">Portfolio</h1>
+                <div class="projects-container">
+                    <div class="portfolio-child project">
+                        <button onclick="window.open('https://matheoguilbert.fr', '_blank');">
+                            <p class="font-size-400">matheoguilbert.fr</p>
+                        </button>
+                    </div>
+                    <div class="portfolio-child project">
+                        <button onclick="window.open('https://amevents.fr', '_blank');">
+                            <p class="font-size-400">amevents.fr</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="portfolio-child viewMore-zone">
+                    <button onclick="window.location.href = 'portfolio.html'">
+                        <p class="font-size-500">voir plus de projet</p>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-            <div id="app" class="optionTable">
-                <div class="line one">
-                    <div class="optionLabel"></div>
-                    <div class="cocheButton">
-                        
+        <div class="calculateCost">
+            <h2 class="font-size-300">Calculez le coût de votre site web</h2>
+
+            <div class="grid-container">
+                <div class="line top-line">
+                    <div class="box font-size-50">Option</div>
+                    <div class="box font-size-50">Coût supplémentaire</div>
+                    <div class="box font-size-50">Délai supplémentaire</div>
+                    <div class="box font-size-50">Oui/Non</div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" checked />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50"></div>
+                    <div class="box font-size-50">
+                        <input type="checkbox" />
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </div>
 

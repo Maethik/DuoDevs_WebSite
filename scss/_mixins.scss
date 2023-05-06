@@ -1,0 +1,7 @@
+@mixin style-text($color, $font-size, $font-fam, $text-align, $text-deco) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-fam;
+    text-align: $text-align;
+    text-decoration: $text-deco;
+}

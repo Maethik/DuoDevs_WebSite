@@ -2,7 +2,7 @@
 /* couleurs secondaires */
 /* couleurs principales */
 /* couleurs secondaires */
-.box, .calculateCost h2, .viewMore-zone, .logoSpeRect, .spe, .profilImg, .intro h1, .intro, .nav-bar {
+.continue-container .linksPlatform .links, .calculateCost h2, .viewMore-zone, .logoSpeRect, .spe, .profilImg, .intro h1, .intro, .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,7 +387,7 @@ nav {
 
 .calculateCost {
   width: 100vw;
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -403,35 +403,109 @@ nav {
   flex-direction: column;
 }
 
-.grid-container {
-  margin-top: 3%;
-  width: 80%;
-  height: fit-content;
+.option-container {
+  width: 50vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  border: white solid 0.5px;
+  justify-content: space-around;
+  align-items: center;
 }
-.grid-container .top-line .box {
+.option-container .option {
   background-color: #31554b;
-  font-weight: 900;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
 }
-.grid-container .line {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+.option-container .option .case {
+  width: 32.5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.box {
-  height: 5vh;
-  border: white solid 0.5px;
+.option-container .option .case .optionCheckbox {
+  width: 20px;
+  height: 20px;
+}
+.option-container .option .optionText {
   color: white;
   font-size: none;
   font-family: monospace;
   text-align: center;
   text-decoration: none;
 }
-.box input[type=checkbox] {
-  width: 20px;
-  height: 20px;
+
+.resume-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resume-container .resumeText {
+  width: 50%;
+  border-top: solid 2px white;
+  padding-top: 15px;
+}
+.resume-container .infosResume {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume {
+  color: white;
+  font-size: none;
+  font-family: monospace;
+  text-align: center;
+  text-decoration: none;
+}
+
+.continue-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.continue-container .p-continue {
+  color: white;
+  font-size: none;
+  font-family: monospace;
+  text-align: center;
+  text-decoration: none;
+}
+.continue-container .linksPlatform {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.continue-container .linksPlatform .links {
+  background-color: #70404e;
+  width: 40%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.continue-container .linksPlatform .links a {
+  color: white;
+  font-size: none;
+  font-family: monospace;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (1305px >= width) {
@@ -460,6 +534,9 @@ nav {
   .projects-container .project:hover {
     width: 110%;
     height: 120%;
+  }
+  .option-container {
+    width: 75vw;
   }
 }
 @media (975px >= width) {
@@ -491,6 +568,15 @@ nav {
   }
   .menu-hamburger {
     width: 80vw;
+  }
+  .option-container {
+    width: 100vw;
+  }
+}
+@media (490px >= width) {
+  .supp {
+    visibility: hidden;
+    width: 0;
   }
 }
 

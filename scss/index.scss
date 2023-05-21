@@ -390,19 +390,19 @@ nav {
 }
 
 .viewMore-zone {
-        background-image: url("../img/bgi-viewmorezone.jpg");
-        background-size: cover;
-        background-position: 50%;
-        width: 100%;
-        height: 40%;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        @extend %flex-center;
+    background-image: url("../img/bgi-viewmorezone.jpg");
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 40%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    @extend %flex-center;
 }
 
 .calculateCost {
     width: 100vw;
-    min-height: 100vh;
+    min-height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -416,35 +416,106 @@ nav {
     }
 }
 
-.grid-container {
-    margin-top: 3%;
-    width: 80%;
-    height: fit-content;
+.option-container {
+    width: 50vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    border: white solid .5px;
+    justify-content: space-around;
+    align-items: center;
 
-    .top-line .box {
+    .option {
         background-color: $theme_vert_fonce;
-        font-weight: 900;
-    }
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30px;
 
-    .line {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        .case {
+            width: 32.5%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .optionCheckbox {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .optionText {
+            @include style-text(white, none, monospace, center, none);
+        }
     }
 }
 
-.box {
-    height: 5vh;
-    border: white solid .5px;
-    @include style-text(white, none, monospace, center, none);
-    @extend %flex-center;
+.resume-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    input[type=checkbox] {
-        width: 20px;
-        height: 20px;
+    .resumeText {
+        width: 50%;
+        border-top: solid 2px white;
+        padding-top: 15px;
     }
+
+    .infosResume {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center
+    }
+}
+
+.resume {
+    @include style-text(white, none, monospace, center, none);
+}
+
+.continue-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .p-continue {
+        @include style-text(white, none, monospace, center, none);
+    }
+
+    .linksPlatform {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .links {
+            background-color: $couleur_surlignage;
+            width: 40%;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            @extend %flex-center;
+            cursor: pointer;
+
+            a {
+                @include style-text(white, none, monospace, center, none);
+            }
+        }
+    }
+
+
 }
 
 @media (1305px >=width) {
@@ -457,6 +528,7 @@ nav {
         width: 0px;
         height: 0px;
     }
+
     .projects-container {
         flex-direction: column;
         align-items: center;
@@ -478,6 +550,10 @@ nav {
                 height: 120%;
             }
         }
+    }
+
+    .option-container {
+        width: 75vw;
     }
 }
 
@@ -516,5 +592,16 @@ nav {
 
     .menu-hamburger {
         width: 80vw;
+    }
+
+    .option-container {
+        width: 100vw;
+    }
+}
+
+@media (490px >=width) {
+    .supp {
+        visibility: hidden;
+        width: 0;
     }
 }

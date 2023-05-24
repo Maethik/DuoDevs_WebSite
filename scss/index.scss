@@ -2,9 +2,13 @@
 @import './_placeholders';
 @import './mixins';
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background: $theme_vert_clair;
 }
 
@@ -603,5 +607,6 @@ nav {
     .supp {
         visibility: hidden;
         width: 0;
+        height: 0;
     }
 }

@@ -26,6 +26,3 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
      document.title = docTitle;
 });
-
-// Affichage du coût total
-var totalCost = 1500;

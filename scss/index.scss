@@ -601,6 +601,12 @@ nav {
     }
 }
 
+@media screen and (width <= 510px) {
+    .rect {
+        width: 100%;
+    }
+}
+
 @media (490px >= width) {
     .supp {
         visibility: hidden;

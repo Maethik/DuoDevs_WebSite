@@ -64,6 +64,7 @@ nav {
     font-size: 1.5rem;
     display: inline;
     position: relative;
+    text-decoration: none;
 }
 
 .menu a::after {
@@ -166,11 +167,14 @@ nav {
     }
 
     .nav-bar-link {
+        text-decoration: none;
         color: white;
         font-size: 2rem;
         display: inline;
         position: relative;
         transition: font-size 0.3s ease;
+
+        cursor: pointer;        
 
         &:hover {
             font-size: 3rem;
@@ -437,10 +441,7 @@ nav {
         .case {
             width: 32.5%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @extend %flex-center;
 
             .optionCheckbox {
                 width: 20px;
@@ -454,70 +455,29 @@ nav {
     }
 }
 
-.resume-container {
-    width: 100%;
-    height: 10vh;
+.devis p {
+    @include style-text(white, none, sans-serif, center, none);
+}
+
+.linksPlateform-container {
+    width: 50%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
-    .resumeText {
-        width: 50%;
-        border-top: solid 2px white;
-        padding-top: 15px;
-    }
-
-    .infosResume {
-        width: 50%;
+    .plateform {
+        width: 45%;
         height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center
-    }
-}
+        background-color: $couleur_surlignage;
+        @extend %flex-center;
+        border-radius: 30px;
 
-.resume {
-    @include style-text(white, none, monospace, center, none);
-}
-
-.continue-container {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    .p-continue {
-        @include style-text(white, none, monospace, center, none);
-    }
-
-    .linksPlatform {
-        width: 50%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .links {
-            background-color: $couleur_surlignage;
-            width: 40%;
-            height: 50px;
-            padding: 10px;
-            border-radius: 10px;
-            @extend %flex-center;
-            cursor: pointer;
-
-            a {
-                @include style-text(white, none, monospace, center, none);
-            }
+        a {
+            @include style-text(white, none, monospace, center, none);
+            margin: 15px;
         }
     }
-
-
 }
 
 @media (1305px >=width) {

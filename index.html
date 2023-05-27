@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/font-size.css">
     <title>DuoDevs</title>
+
+
 </head>
 
 <body>
@@ -17,10 +19,10 @@
         </div>
         <div class="nav-bar">
             <div class="menu">
-                <a class="nav-bar-link">A propos</a>
-                <a class="nav-bar-link">Portfolio</a>
-                <a class="nav-bar-link">Votre projet</a>
-                <a class="nav-bar-link">Contact</a>
+                <a href="#about" class="nav-bar-link">A propos</a>
+                <a href="#portfolio" class="nav-bar-link">Portfolio</a>
+                <a href="#devis" class="nav-bar-link">Votre projet</a>
+                <a href="#contact" class="nav-bar-link">Contact</a>
             </div>
             <button class="hamburger">
                 <span class="l1"></span>
@@ -38,10 +40,10 @@
 
     <div class="menu-hamburger">
         <div class="links">
-            <a class="nav-bar-link">A propos</a>
-            <a class="nav-bar-link">Portfolio</a>
-            <a class="nav-bar-link">Votre projet</a>
-            <a class="nav-bar-link">Contact</a>
+            <a href="#about" class="nav-bar-link menuHamburger_about">A propos</a>
+            <a href="#portfolio" class="nav-bar-link menuHamburger_links">Portfolio</a>
+            <a href="#devis" class="nav-bar-link menuHamburger_links">Votre projet</a>
+            <a href="#contact" class="nav-bar-link menuHamburger_links">Contact</a>
         </div>
     </div>
     <div class="container">
@@ -71,7 +73,7 @@
             </div>
         </div>
 
-        <div class="portfolio-container">
+        <div id="portfolio" class="portfolio-container">
             <div class="portfolio">
                 <h2 class="font-size-300">Portfolio</h1>
                 <div class="projects-container">
@@ -94,98 +96,84 @@
             </div>
         </div>
 
-        <div class="calculateCost">
+        <div id="devis" class="calculateCost">
             <h2 class="font-size-300">Calculez le coût de votre site web</h2>
 
             <div class="option-container">
                 <div class="option">
-                    <div class="case title"><p class="optionText font-size-50">Responsive design</p></div>
+                    <div class="case title"><p class="optionText font-size-50">Option 1</p></div>
                     <div class="case moreInfo">
-                        <p class="optionText cost font-size-50">+<script>document.write(listPrice[0]);</script>€</p>
-                        <p class="optionText delay font-size-50">+3 jours</p>
+                        <p class="optionText cost font-size-50">+100€</p>
                     </div>
                     <div class="case YorN">
-                        <input id="checkbox" class="optionCheckbox" type="checkbox">
+                        <input class="optionCheckbox one" type="checkbox" name="checkbox" />
                     </div>
                 </div>
 
                 <div class="option">
-                    <div class="case title"><p class="optionText font-size-50">Responsive design</p></div>
+                    <div class="case title"><p class="optionText font-size-50">Option 2</p></div>
                     <div class="case moreInfo">
-                        <p class="optionText cost font-size-50">+<script>document.write(listPrice[1]);</script>€</p>
-                        <p class="optionText delay font-size-50">+3 jours</p>
+                        <p class="optionText cost font-size-50">+100€</p>
                     </div>
                     <div class="case YorN">
-                        <input id="checkbox" class="optionCheckbox" type="checkbox">
+                        <input class="optionCheckbox two" type="checkbox" name="checkbox" />
                     </div>
                 </div>
 
                 <div class="option">
-                    <div class="case title"><p class="optionText font-size-50">Responsive design</p></div>
+                    <div class="case title"><p class="optionText font-size-50">Option 3</p></div>
                     <div class="case moreInfo">
-                        <p class="optionText cost font-size-50">+<script>document.write(listPrice[2]);</script>€</p>
-                        <p class="optionText delay font-size-50">+3 jours</p>
+                        <p class="optionText cost font-size-50">+100€</p>
                     </div>
                     <div class="case YorN">
-                        <input id="checkbox" class="optionCheckbox" type="checkbox">
+                        <input class="optionCheckbox three" type="checkbox" name="checkbox" />
                     </div>
                 </div>
 
                 <div class="option">
-                    <div class="case title"><p class="optionText font-size-50">Responsive design</p></div>
+                    <div class="case title"><p class="optionText font-size-50">Option 4</p></div>
                     <div class="case moreInfo">
-                        <p class="optionText cost font-size-50">+<script>document.write(listPrice[3]);</script>€</p>
-                        <p class="optionText delay font-size-50">+3 jours</p>
+                        <p class="optionText cost font-size-50">+100€</p>
                     </div>
                     <div class="case YorN">
-                        <input id="checkbox" class="optionCheckbox" type="checkbox">
+                        <input class="optionCheckbox four" type="checkbox" name="checkbox" />
                     </div>
                 </div>
 
                 <div class="option">
-                    <div class="case title"><p class="optionText font-size-50">Responsive design</p></div>
+                    <div class="case title"><p class="optionText font-size-50">Option 5</p></div>
                     <div class="case moreInfo">
-                        <p class="optionText cost font-size-50">+<script>document.write(listPrice[4]);</script>€</p>
-                        <p class="optionText delay font-size-50">+3 jours</p>
+                        <p class="optionText cost font-size-50">+100€</p>
                     </div>
                     <div class="case YorN">
-                        <input id="checkbox" class="optionCheckbox" type="checkbox">
+                        <input class="optionCheckbox five" type="checkbox" name="checkbox" />
                     </div>
                 </div>
 
                 <div class="option">
-                    <div class="case title"><p class="optionText font-size-50">Responsive design</p></div>
+                    <div class="case title"><p class="optionText font-size-50">Option 6</p></div>
                     <div class="case moreInfo">
-                        <p class="optionText cost font-size-50">+<script>document.write(listPrice[5]);</script>€</p>
-                        <p class="optionText delay font-size-50">+3 jours</p>
+                        <p class="optionText cost font-size-50">+100€</p>
                     </div>
                     <div class="case YorN">
-                        <input id="checkbox" class="optionCheckbox" type="checkbox">
+                        <input class="optionCheckbox six" type="checkbox" name="checkbox" />
                     </div>
                 </div>
             </div>
 
-            <!--<div class="resume-container">
-                <div class="resume resumeText font-size-200">Résumé du site</div>
-                <div class="infosResume">
-                    <div class="resume resumePrix font-size-100">Coût : <script>document.write(totalCost);</script>€</div>
-                    <div class="resume resumeDelay font-size-100">Temps de livraison : <script>document.write(totalTime);</script> jours</div>
-                </div>
+            <div class="devis">
+                <p class="font-size-100" id="totalCost"></p>
             </div>
 
-            <div class="continue-container">
-                <p class="p-continue font-size-200">Poursuivre avec :</p>
-                <div class="linksPlatform">
-                    <div class="links towComeup"><a href="https://comeup.com/" target="_blank" class="font-size-300">ComeUp</a></div>
-                    <div class="links towFiverr"><a href="https://www.fiverr.com/duo_devs" target="_blank" class="font-size-300">Fiverr</a></div>
-                </div>
-
-            </div>-->
+            <div class="linksPlateform-container">
+                <div class="comeup plateform font-size-100"><a href="https://comeup.com/fr/@duo-devs" target="_blank">ComeUp</a></div>
+                <div class="fiverr plateform font-size-100"><a href="https://www.fiverr.com/duo_devs" target="_blank">Fiverr</a></div>
+            </div>
 
         </div>
     </div>
 
-
+    <script src="js/checkbox.js"></script>
     <script src="js/script.js"></script>
 </body>
 

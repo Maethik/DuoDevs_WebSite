@@ -2,7 +2,7 @@
 /* couleurs secondaires */
 /* couleurs principales */
 /* couleurs secondaires */
-.continue-container .linksPlatform .links, .calculateCost h2, .viewMore-zone, .logoSpeRect, .spe, .profilImg, .intro h1, .intro, .nav-bar {
+.linksPlateform-container .plateform, .option-container .option .case, .calculateCost h2, .viewMore-zone, .logoSpeRect, .spe, .profilImg, .intro h1, .intro, .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +81,7 @@ nav {
   font-size: 1.5rem;
   display: inline;
   position: relative;
+  text-decoration: none;
 }
 
 .menu a::after {
@@ -177,11 +178,13 @@ nav {
   align-items: center;
 }
 .menu-hamburger .nav-bar-link {
+  text-decoration: none;
   color: white;
   font-size: 2rem;
   display: inline;
   position: relative;
   transition: font-size 0.3s ease;
+  cursor: pointer;
 }
 .menu-hamburger .nav-bar-link:hover {
   font-size: 3rem;
@@ -424,10 +427,6 @@ nav {
 .option-container .option .case {
   width: 32.5%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .option-container .option .case .optionCheckbox {
   width: 20px;
@@ -441,73 +440,34 @@ nav {
   text-decoration: none;
 }
 
-.resume-container {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.resume-container .resumeText {
-  width: 50%;
-  border-top: solid 2px white;
-  padding-top: 15px;
-}
-.resume-container .infosResume {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.resume {
+.devis p {
   color: white;
   font-size: none;
-  font-family: monospace;
+  font-family: sans-serif;
   text-align: center;
   text-decoration: none;
 }
 
-.continue-container {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.continue-container .p-continue {
-  color: white;
-  font-size: none;
-  font-family: monospace;
-  text-align: center;
-  text-decoration: none;
-}
-.continue-container .linksPlatform {
+.linksPlateform-container {
   width: 50%;
   height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-.continue-container .linksPlatform .links {
+.linksPlateform-container .plateform {
+  width: 45%;
+  height: 100%;
   background-color: #70404e;
-  width: 40%;
-  height: 50px;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
+  border-radius: 30px;
 }
-.continue-container .linksPlatform .links a {
+.linksPlateform-container .plateform a {
   color: white;
   font-size: none;
   font-family: monospace;
   text-align: center;
   text-decoration: none;
+  margin: 15px;
 }
 
 @media (1305px >= width) {

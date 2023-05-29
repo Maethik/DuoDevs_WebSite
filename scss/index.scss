@@ -521,6 +521,10 @@ nav {
     .option-container {
         width: 75vw;
     }
+
+    .portfolio-child {
+        transition: none;
+    }
 }
 
 @media (975px >=width) {

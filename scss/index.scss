@@ -239,6 +239,7 @@ nav {
 
     .rect {
         @extend %gradient-rect;
+        align-items: center;
         width: 500px;
         height: 700px;
         border-radius: 30px;
@@ -275,7 +276,7 @@ nav {
 }
 
 .arth .profilImg .img {
-    background-image: url("../img/mathPhoto.jpg");
+    background-image: url("../img/arthur.jpeg");
     background-size: cover;
     background-position: 50%;
 }
@@ -289,7 +290,6 @@ nav {
     letter-spacing: 3px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 3%;
 }
 
 .shortDesc p {
@@ -465,6 +465,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
 
     .plateform {
         width: 45%;
@@ -566,7 +567,15 @@ nav {
 
     .option-container {
         width: 100vw;
+        padding: 10px;
     }
+    .nos-specialitees{
+        padding: 10px;
+    }
+    .portfolio{
+        padding: 10px;
+    }
+
 }
 
 @media screen and (width <= 510px) {
